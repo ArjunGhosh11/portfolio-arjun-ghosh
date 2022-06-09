@@ -1,0 +1,74 @@
+.contactForm input,
+textarea {
+    display: block;
+    margin: 10px auto;
+    width: 75%;
+    border: 0px solid lightgray;
+    font-size: 120%;
+    padding: 7px 15px;
+    outline: none;
+    border-radius: 25px;
+}
+
+.contactForm textarea {
+    height: 100px;
+}
+
+.contactForm input:focus,
+textarea:focus {
+    box-shadow: 0 0 15px #92e3a9;
+    border: 0px solid #92e3a9;
+}
+
+.contactForm label {
+    display: block;
+    margin: 10px auto;
+    width: 75%;
+    font-size: 130%;
+}
+
+/* .btnSubmit{
+    border: 0 solid transparent;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 130%;
+    margin: 10px auto;
+    display: block;
+    border-radius: 5px;
+    width: 75%;
+    cursor: pointer;
+}
+.btnSubmit:hover{
+    background-color: lightgreen;
+    transition: 1s;
+} */
+
+
+
+.btnSubmit {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin: 15px auto;
+    display: block;
+}
+
+.btnSubmit:hover {
+    background-color: #D99330;
+    box-shadow: 0px 15px 20px rgba(240, 127, 6, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
