@@ -11,15 +11,26 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#32a85e",
-          secondary: "#13cf19",
-          accent: "#f79d16",
-          neutral: "#f71616",
-          "base-100": "#ffffff",
+
+          "primary": "#1EB854",
+
+          "secondary": "#1FD65F",
+
+          "accent": "#D99330",
+
+          "neutral": "#110E0E",
+
+          "base-100": "#171212",
+
+          "info": "#3ABFF8",
+
+          "success": "#36D399",
+
+          "warning": "#FBBD23",
+
+          "error": "#F87272",
         },
       },
-      "dark",
-      "cupcake",
     ],
   },
 }
