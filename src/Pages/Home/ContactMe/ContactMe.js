@@ -1,5 +1,4 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
 import { useForm } from 'react-hook-form';
 import './ContactMe.css';
 import { send } from 'emailjs-com'
