@@ -1,5 +1,6 @@
 [
     {
+        "index": 0,
         "name": "TECH DOWN",
         "liveSite": "https://assignment-11-281bf.firebaseapp.com/",
         "client": "https://github.com/ArjunGhosh11/tech-down-client",
@@ -19,12 +20,13 @@
         ]
     },
     {
+        "index": 1,
         "name": "TECH BUILDER",
         "liveSite": "https://tech-builder-49d52.web.app/",
         "client": "https://github.com/ArjunGhosh11/tech-builder-client",
         "server": "https://github.com/ArjunGhosh11/tech-builder-server",
         "description": [
-            "Admin and user have different levels of access in the website’s dashboard.",
+            "Admin and user have different levels of access in the websites dashboard.",
             "Users can register using email and password or can use a Google account to sign in. ",
             "Users or Admin must sign in to view the dashboard or to place an order. ",
             "Users will be able to manage their orders from the dashboard and add reviews. An admin will be able to add other admins, manage all orders, manage parts, etc."
@@ -37,6 +39,7 @@
         ]
     },
     {
+        "index": 2,
         "name": "MEMORIES",
         "liveSite": "https://assignment-10-f82c0.web.app/",
         "client": "https://github.com/ArjunGhosh11/memories",
