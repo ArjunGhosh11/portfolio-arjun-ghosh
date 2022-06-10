@@ -50,9 +50,9 @@ const ProjectDetails = () => {
             ],
             "technology": "JS, React, Firebase, Tailwind, DAISY UI, React Hook Form, React Router, Node JS, Node Express, MongoDB.",
             "img": [
-                "https://ghosh-rj11.nimbusweb.me/box/attachment/7065185/55mhvrccn9nis0rlb5p6/83VJHhyUy7hGeBRJ/screenshot-assignment-11-281bf.firebaseapp.com-2022.06.10-12_52_08.png",
-                "https://ghosh-rj11.nimbusweb.me/box/attachment/7065218/0l90wfrc7lwa0exflaa3/M8uzQxrpnyu25wAI/screenshot-assignment-11-281bf.firebaseapp.com-2022.06.10-12_55_58.png",
-                "https://ghosh-rj11.nimbusweb.me/box/attachment/7065245/ldxuszva3qmpm5tx6yaw/DaR7MXFi3ksavJL4/screenshot-assignment-11-281bf.firebaseapp.com-2022.06.10-12_58_33.png"
+                "https://ghosh-rj11.nimbusweb.me/box/attachment/7065849/y3dmfxnil6z8b9lb86sh/JQAFcadJD83ikYhH/screenshot-tech-builder-49d52.web.app-2022.06.10-14_29_21.png",
+                "https://ghosh-rj11.nimbusweb.me/box/attachment/7065861/k6xxe9wbd0c1omvur9r5/MJhXe8lhR1f8Y5hg/screenshot-tech-builder-49d52.web.app-2022.06.10-14_31_28.png",
+                "https://ghosh-rj11.nimbusweb.me/box/attachment/7065872/k4bielkoe5u67icwvsqn/baZ4K9Ubi6b3UrQy/screenshot-tech-builder-49d52.web.app-2022.06.10-14_33_22.png"
             ]
         },
         {
@@ -71,9 +71,9 @@ const ProjectDetails = () => {
             ],
             "technology": "HTML, CSS, JS, React, Firebase,react bootstrap, React Hook Form, React Router.",
             "img": [
-                "https://ghosh-rj11.nimbusweb.me/box/attachment/7065185/55mhvrccn9nis0rlb5p6/83VJHhyUy7hGeBRJ/screenshot-assignment-11-281bf.firebaseapp.com-2022.06.10-12_52_08.png",
-                "https://ghosh-rj11.nimbusweb.me/box/attachment/7065218/0l90wfrc7lwa0exflaa3/M8uzQxrpnyu25wAI/screenshot-assignment-11-281bf.firebaseapp.com-2022.06.10-12_55_58.png",
-                "https://ghosh-rj11.nimbusweb.me/box/attachment/7065245/ldxuszva3qmpm5tx6yaw/DaR7MXFi3ksavJL4/screenshot-assignment-11-281bf.firebaseapp.com-2022.06.10-12_58_33.png"
+                "https://ghosh-rj11.nimbusweb.me/box/attachment/7065886/0d5a0b86o36tspaat116/l84LYJKMhFAEpROV/screenshot-assignment-10-f82c0.web.app-2022.06.10-14_35_15.png",
+                "https://ghosh-rj11.nimbusweb.me/box/attachment/7065900/uh2ccqni48s3e39oq0gh/8YBKgzJ6wfGbsFM7/screenshot-assignment-10-f82c0.web.app-2022.06.10-14_37_06.png",
+                "https://ghosh-rj11.nimbusweb.me/box/attachment/7065908/vcr6qs4fu9g3q03cuusx/iV04LPJENGp9wfpc/screenshot-assignment-10-f82c0.web.app-2022.06.10-14_38_15.png"
             ]
         }
     ]
@@ -86,7 +86,7 @@ const ProjectDetails = () => {
     // if (!projects) {
     //     return <p>Loading</p>
     // }
-    const { name, server, liveSite, client, description, technology } = projects[index];
+    const { name, server, liveSite, client, description, technology, img } = projects[index];
 
 
     return (
@@ -100,12 +100,17 @@ const ProjectDetails = () => {
                 }
             </div>
             <div className='container lg:mx-20'>
-                <h4 className='text-xl text-primary'>PROJECT DETAILS:</h4>
-                <ul className='my-5'>
+                <h4 className='text-xl mx-10 text-primary'>PROJECT DETAILS:</h4>
+                <ul className='my-5 mx-10'>
                     {description?.map(point => <li>={point}</li>)}
                 </ul>
-                <h4 className='text-xl text-primary'>TECHNOLOGIES USED:</h4>
-                <p>{technology}</p>
+                <h4 className='text-xl text-primary mx-10'>TECHNOLOGIES USED:</h4>
+                <p className='mx-10'>{technology}</p>
+            </div>
+            <div className='w-90  flex justify-center flex-col gap-5 mt-10'>
+                {
+                    img.map(i => <img className='w-90 lg:w-[1000px] lg:mx-auto' alt='' src={i}></img>)
+                }
             </div>
         </div>
     );

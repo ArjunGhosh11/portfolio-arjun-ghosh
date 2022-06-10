@@ -3,9 +3,9 @@ import pic from '../../images/pic.png';
 import './AboutMe.css'
 const AboutMe = () => {
     return (
-        <div className='about font-bold text-primary'>
+        <div className='about font-bold text-primary mb-20'>
             <h2 className='text-center text-3xl mb-5'>ABOUT ME</h2>
-            <div class="hero min-h-screen bg-base-200">
+            <div class="hero  bg-base-200">
                 <div class="hero-content flex-col lg:flex-row">
                     <img src={pic} alt="" />
                     <div className='flex flex-col justify-center align-middle lg:ml-[300px]'>

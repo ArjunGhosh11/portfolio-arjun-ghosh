@@ -28,7 +28,7 @@ const Header = () => {
                 </ul>
             </div>
             <div class="navbar-end">
-                <a target="_blank" href='https://drive.google.com/file/d/1xDYIxW5Yg3IysouS0dFNaJF3JjbJra81/view' className="btn text-primary">DOWNLOAD RESUME</a>
+                <a target="_blank" href='https://drive.google.com/file/d/1zFy2pbLSPdLhhuc2Rgnpf1dVnqan3hbc/view?usp=sharing' className="btn text-primary">DOWNLOAD RESUME</a>
             </div>
         </div>
     );
