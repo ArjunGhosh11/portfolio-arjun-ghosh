@@ -1,8 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import project1 from '../../images/techDownBG.png';
 import project2 from '../../images/techBuilderBG.png';
 import project3 from '../../images/memoriesBG.png';
 const MyProjects = () => {
+    const navigate = useNavigate();
+    const handleOnClick = index => {
+        const url = `/myProjects/${index}`
+        navigate(url);
+    }
     return (
         <div id='myProjects'>
             <h2 className='lg:text-5xl text-4xl font-bold text-center text-primary'>MY PROJECTS</h2>
@@ -13,7 +19,7 @@ const MyProjects = () => {
 
                         <div class="card-actions flex-col justify-center items-center mt-7 ">
                             <h2 class="text-xl font-bold text-primary">Tech Down</h2>
-                            <button class="btn btn-accent text-neutral text-bold"><a target='_blank' href="https://assignment-11-281bf.firebaseapp.com/">LIVE SITE</a></button>
+                            <button onClick={() => handleOnClick(0)} class="btn btn-accent text-neutral text-bold"><a target='_blank'>Details</a></button>
                         </div>
                     </div>
                 </div>
@@ -23,7 +29,7 @@ const MyProjects = () => {
 
                         <div class="card-actions flex-col justify-center items-center mt-7 ">
                             <h2 class="text-xl font-bold text-primary">Tech Builder</h2>
-                            <button class="btn btn-accent text-neutral text-bold"><a target='_blank' href="https://tech-builder-49d52.web.app/">LIVE SITE</a></button>
+                            <button onClick={() => handleOnClick(1)} class="btn btn-accent text-neutral text-bold"><a>Details</a></button>
                         </div>
                     </div>
                 </div>
@@ -33,7 +39,7 @@ const MyProjects = () => {
 
                         <div class="card-actions flex-col justify-center items-center mt-7 ">
                             <h2 class="text-xl font-bold text-primary">Memories</h2>
-                            <button class="btn btn-accent text-neutral text-bold"><a target='_blank' href="https://assignment-10-f82c0.web.app/">LIVE SITE</a></button>
+                            <button onClick={() => handleOnClick(2)} class="btn btn-accent text-neutral text-bold"><a>Details</a></button>
                         </div>
                     </div>
                 </div>
